@@ -32,20 +32,11 @@
         #whatsapp:hover {
             background: green;
         }
-        @media(max-width:600px) {
-
-            #container{
-            display: flex;
-            align-items: center;
-            justify-content:center;
-            flex-direction: column;
-        }
-        }
         #container{
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            gap: 2rem;
         }
         #foto_card{
             padding: 5px;
@@ -54,6 +45,8 @@
             border-radius: 5px;
         }
         #foto-produto{
+            width: 400px;
+            height: 450px;
             border-radius: 5px;
             border: solid 1px black;
         }
@@ -61,6 +54,7 @@
             scale: 1.2;
         }
         #cabecalho{
+            display: none;
             padding: 10px 60px;
             background: blue;
             border-radius: 5px;
@@ -69,25 +63,69 @@
             font-style: normal;
             font-size: 17px;
             color: black;
+        } 
+        @media(max-width:600px) {
+
+        a,p{
+            font-family: "Oleo Script", system-ui;
+            font-style: normal;
+            font-size: 17px;
+            color: black;
         }
 
+        #whatsapp {
+            padding: 2px;
+            border: solid 1px green;
+            border-radius: 10px;
+            background: greenyellow;
+        }
+
+        #whatsapp:hover {
+            background: green;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #foto_card{
+            background-color:gray;
+            border: solid 2px black;
+            border-radius: 5px;
+        }
+        #foto-produto{
+            border-radius: 5px;
+            border: solid 1px black;
+            max-width: 300px;
+            max-height: 300px;
+        }
+        #foto-produto:hover{
+            scale: 1.2;
+        }
+        #cabecalho{
+            padding: 5px 50px;
+            background: blue;
+            border-radius: 5px;
+            border: solid 1px black;
+            font-family: "Oleo Script", system-ui;
+            font-style: normal;
+            font-size: 17px;
+            color: black;
+        }
+      }
     </style>
 </head>
 <body>
     <div id="container">
-        <header id="cabecalho"><h1>todos os nossos produtos </h1></header>
+        <header id="cabecalho"><h1>nossos produtos </h1></header>
         
         <div id="foto_card" ><img id="foto-produto" src="f1.png" alt=""><div><p>caixa para lenbrança de aniversario de 1 ano <br> dimençao 20cm x 15 cm R$25 reais a unidade</p><button id="whatsapp" ><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whastapp</a></button></div></div>
 
         <div id="foto_card" ><img id="foto-produto" src="f2.png" alt=""><div><p>caixa para lenbrança de aniversario de 1 ano <br> dimençao 20cm x 15 cm R$25 reais a unidade</p><button id="whatsapp" ><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button></div></div>
 
         <div id="foto_card" ><img id="foto-produto" src="f3.png" alt=""><div><p>caixa para lenbrança de aniversario de 1 ano <br> dimençao 20cm x 15 cm R$25 reais a unidade</p><button id="whatsapp" ><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button></div></div>
-
-        
-
     </div>
-
     <a href="index.html">&laquo; voltar</a>
-
 </body>
 </html>
