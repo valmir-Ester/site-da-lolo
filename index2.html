@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art da loh</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Pacifico&display=swap');
+        *{
+            padding: 0;
+            margin: 2px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        a{
+            font-family: "Oleo Script", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            color: black;
+        }
+        body{
+            background: pink;
+        }
+        .todos{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+        }
+        /* card */
+        #container{
+            height: 90vh;
+            width: 90vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flip-card{
+            width: 400px;
+            height: 500px;
+            perspective: 1000px;
+        }
+        .flip-card:hover .flip-card-iner{
+            transform: rotateY(180deg);
+        }
+        .flip-card .flip-card-back{
+            transform: rotateY(180deg);
+        }
+        .img{
+            width: 400px;
+            height:500px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 0;
+        }
+        .texto{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 400px;
+            height:500px;
+            border-radius: 5px;
+            color: greenyellow;
+            text-align: center;
+            font-size: 30px;
+        }
+        .flip-card-iner{
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s; 
+        }
+        .flip-card-back,
+        .flip-card-front{
+            position: absolute;
+            backface-visibility: hidden;
+            background: black;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px ;
+        }
+        #whatsapp {
+            padding: 5px 20px;
+            border: solid 1px green;
+            border-radius: 10px;
+            background: greenyellow;
+        }
+
+        #whatsapp:hover {
+            background: green;
+        }
+        @media(max-width:600px) {
+
+            .todos{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="todos">
+        <div id="container">
+            <div class="flip-card">
+                <div class="flip-card-iner">
+                    <div class="flip-card-front">
+                        <img src="f1.png" class="img" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="texto">caixa para lembrança de aniversario infantil, condimençoes padrao de 20cm x 15cm o jogo com 30 unidades sai a  R$100 <button id="whatsapp"><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div class="flip-card">
+                <div class="flip-card-iner">
+                    <div class="flip-card-front">
+                        <img src="f2.png" class="img" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                         <p class="texto">um otimo tenis super confortavel feito com a mais alta tecnologia de absorviçao de impacto R$400 <button id="whatsapp"><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div class="flip-card">
+                <div class="flip-card-iner">
+                    <div class="flip-card-front">
+                        <img src="f3.png" class="img" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="texto">um otimo tenis super confortavel feito com a mais alta tecnologia de absorviçao de impacto R$400 <button id="whatsapp"><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    </div>
+
+    <a href="index.html">&laquo; voltar</a>
+
+</body>
+</html>

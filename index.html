@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art da Loh</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Pacifico&display=swap');
+
+        body {
+                background: aqua;
+                cursor: pointer;
+        }
+        *{
+            text-decoration: none;
+        }
+        a{
+            font-family: "Oleo Script", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            color: black;
+        }
+        #informacao{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .slides{
+            width: 300px;
+            height: 350px;
+        }
+        .slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px 5px 5px 5px;
+            background:grey;
+            border: solid 2px black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px black;
+        }
+        #foto2{
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+        }
+        #botao{
+            margin-top: 5px;
+            padding: 3px 54px;
+            border-radius: 10px;
+            background:greenyellow;
+            border: solid 1px;
+        }
+        #botao:hover{
+            background:orangered;
+        }
+        #cabecalho {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #whatsapp {
+            padding: 5px 20px;
+            border: solid 1px green;
+            border-radius: 10px;
+            background: greenyellow;
+        }
+
+        #whatsapp:hover {
+            background: green;
+        }
+
+        #titulo {
+            font-family: "Oleo Script", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #foto {
+            width: 100px;
+        }
+        #redeSocial{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+            gap: 1rem;
+        }
+        .redes{
+            width: 40px;
+        }
+
+        @media(max-width:600px) {
+
+            #cabecalho {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <h1 id="titulo">Arte da Loh</h1>
+        <img id="foto" src="lozi.png" alt="">
+        <button id="whatsapp"><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button>
+    </header>
+ 
+    <main id="informacao">
+        <div class="slider">
+            <div class="slides"><img id="foto2" src="f1.png" alt=""></div>
+            <div class="slides"><img id="foto2" src="f2.png" alt=""></div>
+            <div class="slides"><img id="foto2" src="f3.png" alt=""></div>
+            <button id="botao"><a href="index2.html">sua caixa a um click</a></button>
+        </div>
+    </main>
+
+    <section id="redeSocial">
+        <a href="https://www.facebook.com"><img class="redes" src="facebook.png" alt="">facebook</a>
+        <a href="https://www.instagram.com"><img class="redes" src="instagram.png" alt="">instagram</a>
+    </section>
+
+    <script>    
+        let slideIndex = 0;
+        function showSlider(){
+            let slides=document.querySelectorAll(".slides");
+            for(let i=0; i < slides.length; i++){
+                slides[i].style.display="none"
+            }
+            slideIndex ++;
+            if(slideIndex > slides.length){slideIndex = 1}
+            slides[slideIndex - 1].style.display="block"
+            setTimeout(showSlider,2000);
+        }
+        showSlider()
+    </script>
+</body>
+</html>
