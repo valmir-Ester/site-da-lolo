@@ -80,6 +80,17 @@
             font-family: "Oleo Script", system-ui;
             font-weight: 400;
             font-style: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        
+        }
+        #titulo2{
+            font-family: "Oleo Script", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: black;  
         }
 
         #foto {
@@ -104,14 +115,108 @@
                 align-items: center;
                 gap: 3rem;
             }
+
+            a{
+            font-family: "Oleo Script", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            color: black;
         }
+        #informacao{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .slides{
+            width: 300px;
+            height: 350px;
+        }
+        .slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px 5px 5px 5px;
+            background:grey;
+            border: solid 2px black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px black;
+        }
+        #foto2{
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+        }
+        #botao{
+            margin-top: 5px;
+            padding: 3px 54px;
+            border-radius: 10px;
+            background:greenyellow;
+            border: solid 1px;
+        }
+        #botao:hover{
+            background:orangered;
+        }
+        #cabecalho {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #whatsapp {
+            padding: 5px 20px;
+            border: solid 1px green;
+            border-radius: 10px;
+            background: greenyellow;
+        }
+
+        #whatsapp:hover {
+            background: green;
+        }
+
+        #titulo{
+            font-family: "Oleo Script", system-ui;
+            font-size: 20px;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color:red;
+        }
+        #titulo2{
+            font-family: "Oleo Script", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: black;  
+        }
+        #foto {
+            width: 100px;
+        }
+        #redeSocial{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+            gap: 1rem;
+        }
+        .redes{
+            width: 40px;
+        }
+     }
     </style>
 </head>
 
 <body>
 
     <header id="cabecalho">
-        <h1 id="titulo">Arte da Loh</h1>
+        <div id="titulo"><h1 id="titulo2">Arte da Loh</h1>
+        <h2>"especializado na fabricação de caixas de pesente &hearts;"</h2></div>
+
         <img id="foto" src="lozi.png" alt="">
         <button id="whatsapp"><a href="https://wa.me/5527996102916?text=quero%20saber%20mais%20sobre%20os%20produtos">whatsapp</a></button>
     </header>
