@@ -248,6 +248,22 @@
             setTimeout(showSlider,2000);
         }
         showSlider()
+
+                // ampliar foto
+        const foto=document.querySelector("#foto");
+
+        foto.addEventListener("mousemove",(ev)=>{
+      
+            foto.src="cor.gif"
+            foto.style="width:200px;"
+        })
+        foto.addEventListener("mouseout",(ev)=>{
+      
+            foto.src="lozi.png"
+            foto.style="width:100px;"
+   
+        })
+        
     </script>
 </body>
 </html>
